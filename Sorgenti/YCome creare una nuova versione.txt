@@ -1,0 +1,14 @@
+﻿
+
+CREAZIONE DI UNA NUOVA VERSIONE (o di un nuovo programma)
+
+1) Copiare l'intera directory del programma e dargli il nome che si vuole
+
+2) Cambiare nome al file .sln
+
+3) Aprire il file .sln con VisualStudio, modificare il nome appena sotto a 'solution' nella	finestra 'solution explorer'
+
+4) Modificare l'Assembly Name tramite il menù Project/Properties, finestra Application,
+
+5) Dalla finestra Application premere il pulsante Assembly Informations e modificare le proprietà 
+	ProductName, ProductVersion, CompanyName

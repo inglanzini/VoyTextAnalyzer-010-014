@@ -1,0 +1,36 @@
+﻿In EvoTemplate
+
+	- Plot di un grafico, che devo dire mi è venuto piuttosto bene (e con autoscaling completo su entrambi gli assi). EvoTemplate 010 010.
+
+	- Gestione di un albero. In particolare la function CompactTree() è in effetti un'algoritmo per attraversare tutti i nodi di un tree: essendo un algoritmo
+		'ricorsivo' è tutto meno che facile da implementare. Mi è venuto, devo dire, piuttosto bene (e anche il resto delle gestioni sono fatte bene). EvoTemplate 010 010.
+
+	- Gestione di una thread con pulsante di start/stop e con i vari problemi di visualizzazione (che sorgono sempre) risolti alla radice direi, mentre i
+		problemi di interazioni coi tasti (altrettanto rognosi) sono per lo meno risolti. Cercare threadIsStarted nei files. EvoTemplate 010 010.
+		
+
+
+In Armies on Hexes:
+
+	- Form suddivisa in vari campi che si adattano automaticamente quando la si ridimensiona (originariamente da ArsMilitaris). Va già bene Armies on hexes 010 010.
+
+	- Gestione dei 'defines' organizzati come enums (n-esimo rifacimento mi sa, chi si ricorda xD). Direi che la 010 011 sia già a buon punto e funzionante. Supporta degli enum
+	  (che possono anche avere dei buchi) tramite i quali è possibile accedere a strutture complesse. Include ricavare e gestire comboBoxes dagli enum. SAREBBE UN'IDEA INSERIRLA
+	  NEL TEMPLATE PER NON REINVENTARLA TUTTE LE VOLTE....
+	  
+	- Gestione del mouse (incluso mousehover, originariamente da ArsMilitaris). Va già bene Armies on hexes 010 010.
+	- Gestione della mousewheel!! serve un'arcana istruzione all'inizio del programma e un event handler che va aggiunto a mano (l'editor della Form non lo supporta)
+
+
+In ArsMilitaris: 
+
+	- Visualizzatore di grafica vettoriale
+
+
+In DigiWorm:
+
+	- Gestione completa delle dataGridView, con tutta una serie di supporti che rendono semplice (beh, abbastanza..)
+		aggiungere/togliere colonne a una tabella, richiamare i valori per nome nel programma e passarli
+		a chi ne ha bisogno
+	- Creazione grafici (da una libreria freeware, ma vedere anche EvoWorm dove c'è una versione più recente). Il plotter di grafici in EvoTemplate è più bello, ma da qua si
+		possono imparare cose interessanti direi (p.es. come realizzare dei controlli custom, che coi grafici tornano molto utili)

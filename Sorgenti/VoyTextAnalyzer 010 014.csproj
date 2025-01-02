@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B3577EB-ABBD-432F-84DE-A426C7359C0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Template</RootNamespace>
+    <AssemblyName>VoyTextAnalyzer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClusteringResults.cs" />
+    <Compile Include="CompareResults.cs" />
+    <Compile Include="FormClustering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClustering.Designer.cs">
+      <DependentUpon>FormClustering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompare.Designer.cs">
+      <DependentUpon>FormCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackGrammarAndWrite.cs" />
+    <Compile Include="ParseGrammarsLibrary.cs" />
+    <Compile Include="ParseHuffmann.cs" />
+    <Compile Include="ParseVoynich.cs" />
+    <Compile Include="VClusteringChoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VClusteringChoices.Designer.cs">
+      <DependentUpon>VClusteringChoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VOptionsFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOptionsFiles.Designer.cs">
+      <DependentUpon>VOptionsFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VOptionsVisualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOptionsVisualization.Designer.cs">
+      <DependentUpon>VOptionsVisualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VSaveAnalysisDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VSaveAnalysisDialog.Designer.cs">
+      <DependentUpon>VSaveAnalysisDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VWarningCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VWarningCompare.Designer.cs">
+      <DependentUpon>VWarningCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XControls.cs" />
+    <Compile Include="XPlotClusters.cs" />
+    <Compile Include="XPlotGraphs1d.cs" />
+    <Compile Include="SyllablesStats.cs" />
+    <Compile Include="TextAnalysis_results.cs" />
+    <Compile Include="TextCharsStats.cs" />
+    <Compile Include="TextPreprocessor.cs" />
+    <Compile Include="VocabularyStats.cs" />
+    <Compile Include="VOptionsPreprocess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOptionsPreprocess.Designer.cs">
+      <DependentUpon>VOptionsPreprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WAboutForm.Designer.cs">
+      <DependentUpon>WAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextAnalyzerClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XConfig.cs" />
+    <Compile Include="XPlotGraphs2d.cs" />
+    <Compile Include="XStandards.cs" />
+    <EmbeddedResource Include="FormClustering.resx">
+      <DependentUpon>FormClustering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompare.resx">
+      <DependentUpon>FormCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VClusteringChoices.resx">
+      <DependentUpon>VClusteringChoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOptionsFiles.resx">
+      <DependentUpon>VOptionsFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOptionsPreprocess.resx">
+      <DependentUpon>VOptionsPreprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOptionsVisualization.resx">
+      <DependentUpon>VOptionsVisualization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSaveAnalysisDialog.resx">
+      <DependentUpon>VSaveAnalysisDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VWarningCompare.resx">
+      <DependentUpon>VWarningCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WAboutForm.resx">
+      <DependentUpon>WAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="YTecnologie e dove trovarle.txt" />
+    <Content Include="YCome creare una nuova versione.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
