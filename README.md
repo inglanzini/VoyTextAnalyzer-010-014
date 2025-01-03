@@ -1,6 +1,6 @@
 # VoyTextAnalyzer 010 014
 
-This repository containd the software and supplementary data for the paper "The evaluation of slot grammars and their application in the study of the Voynich Manuscript" published on Academia.edu at https://www.academia.edu/126768005/The_evaluation_of_slot_grammars_and_their_application_in_the_study_of_the_Voynich_Manuscript
+This repository contains the software and supplementary data for the paper "The evaluation of slot grammars and their application in the study of the Voynich Manuscript" published on Academia.edu at https://www.academia.edu/126768005/The_evaluation_of_slot_grammars_and_their_application_in_the_study_of_the_Voynich_Manuscript
 
 
 List of Supplementary data
