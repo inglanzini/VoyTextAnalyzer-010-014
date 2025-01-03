@@ -5,10 +5,10 @@ This repository contains the software and supplementary data for the paper "The 
 
 List of Supplementary data
 
-•	Reference Voynich transcription actually used in this work: “RF1a-n-x7 without question marks.txt”
-•	Excel dumps of LOOP-Lay grammar, which include the division of each word type in chunks, the chunks dictionary with Huffmann codes and additional data not used in this study but used for generating the pseudo-Voynich asemic text: “Grammar LOOP-Lay 5R.xlsx”. For reference, the same data are provided for the two trvial grammars: “Grammar CSET 10R.xlsx” and “Grammar WSET 1R.xlsx”.
-•	An example of an asemically generated pseudo-Voynich: “Pseudo-Voynich asemic seed 0.txt”.
-•	The .exe of VoyTextAnalyzer 010 014: “VoyTextAnalyzer.exe”.
-•	“VoyTextAnalyzer 010 014 User Manual and Software Notes.pdf”
-•	“TextAnalyzer 010 014 manuale.pdf”: user manual (in Italian) of the basic TextAnalyzer software of which VoyTextAnalyzer is an extension.
-•	A copy of the paper "The evaluation of slot grammars and their application in the study of the Voynich Manuscript": "Slot grammars as data compression 010.pdf"
+(1)	Reference Voynich transcription actually used in this work: “RF1a-n-x7 without question marks.txt”
+(2)	Excel dumps of LOOP-Lay grammar, which include the division of each word type in chunks, the chunks dictionary with Huffmann codes and additional data not used in this study but used for generating the pseudo-Voynich asemic text: “Grammar LOOP-Lay 5R.xlsx”. For reference, the same data are provided for the two trvial grammars: “Grammar CSET 10R.xlsx” and “Grammar WSET 1R.xlsx”.
+(3)	An example of an asemically generated pseudo-Voynich: “Pseudo-Voynich asemic seed 0.txt”.
+(4)	The .exe of VoyTextAnalyzer 010 014: “VoyTextAnalyzer.exe”.
+(5)	“VoyTextAnalyzer 010 014 User Manual and Software Notes.pdf”
+(6)	“TextAnalyzer 010 014 manuale.pdf”: user manual (in Italian) of the basic TextAnalyzer software of which VoyTextAnalyzer is an extension.
+(7)	A copy of the paper "The evaluation of slot grammars and their application in the study of the Voynich Manuscript": "Slot grammars as data compression 010.pdf"
